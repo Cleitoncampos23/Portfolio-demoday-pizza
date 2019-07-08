@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="10">
     <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+
     <title>Pizza</title>
 </head>
 <body>
     <nav class="navbar">
         <a href="">Home</a>
-        <a href="">Serviços</a>
+        <a href="">Pizzarias</a>
        <a href="">Contato</a>
    </nav>
    <header>
@@ -28,11 +30,10 @@
             <label class="label">Nome* </label>
             <input  type="text" name="nome">
 
-            <label class="label">E-mail*</label>
+            <label class="label">Endereço*</label>
+            <input  type="text" name="nome">
 
-            <input  type="email" name="email">
-
-            <label class="label">Pessoas*</label>
+            <label class="label">Quantidade*</label>
             <select name="--Selecione--">
                 <option disabled="disable"></option>
                 <option value="1">1</option>
@@ -54,11 +55,26 @@
                 <option value="22.80">R$ 22.80</option>
                 <option value="29.40">R$ 29.40</option>
             </select><br>
-            <button>Reservar Agora</button>
+            <button>Monte Agora</button>
         </form>
     </div>
 </div>
 </header>
+
+<section>
+        <div id="div-pizzarias">
+            <h2>Pizzarias</h2> 
+        </div>
+    
+    <div class="section_fundo">
+        <img src="../static/img/banner_index.jpg" alt="">
+    <div id="sectionButon">
+        <h1>Lorem ipsum dolor sit amet consectetur?</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+        <button id="section_botao">Clique aqui</button>
+    </div>
+    </div>
+</section>
 
 
 </body>

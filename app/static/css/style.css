@@ -8,9 +8,10 @@ body {
     margin: 0;
     display: grid;
     grid-template-areas:'navbar navbar navbar navbar'
-                        'header header header header';
+                        'header header header header'
+                        'section section section section';
 
-    grid-template-rows: 12vh 110vh; 
+    grid-template-rows: 12vh 110vh 65vh; 
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -128,8 +129,89 @@ header {
     height: 40px;
     border: none;
     background-color: #c50000e0;
-    border-radius: 4px ;
+    border-radius: 4px;
     color: whitesmoke;
     font-size: 100%;
+    cursor: pointer;
+}
+
+section{
+    grid-area: section;
+    background-color:#fafafa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid black;
+}
+
+#div-pizzarias{
+    background-color: black;
+    height:10%;
+    width: 25%;
+    margin-left: 40%;
+}
+
+#div-pizzarias h2{
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+}
+
+.section_fundo{
+    background-color: #fafafa;
+    height: 90%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.section_fundo img{
+    height: 320px;
+    margin-left: 2%;
+    
+}
+
+.section_fundo p{
+    text-align: center;
+    color:#535353;
+    font-size:25px;
+}
+
+#sectionButon {
+    height: 75%;
+    background: rgba(128, 128, 128, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+
+#sectionButon h1 {
+    align-items: stretch;
+    font-size: 35pt;
+
+}
+
+#section_botao{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    font-size: 15pt;
+    margin-top: 10px;
+    
+}
+#section_botao a {
+    text-decoration: none;
+
+}
+#section_botao:hover {
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
