@@ -12,7 +12,7 @@ body {
                         'section section section section'
                         'aside aside aside aside';
 
-    grid-template-rows: 12vh 110vh 65vh 60vh; 
+    grid-template-rows: 12vh 110vh 100vh 60vh; 
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -34,15 +34,16 @@ body {
 
 header {
     grid-area: header;
-    /* background-image: url(../img/banner_index.jpg); */
-
 }
 
-
-
 #bg_video{
-    background: url(../videos/bg_pizza3.mp4);
+    background: url(../videos/bg_pizza3.mp4) no-repeat;
+	position: fixed; 
+	right: 0;
+	min-width: 100%; 
+	min-height: 100%; 
 	z-index: -1000;
+	background-size: cover; 
 }
 
 .fundoTransparente {
