@@ -174,10 +174,25 @@ section{
     align-items: center;
 }
 
-.section_fundo img{
-    height: 320px;
-    margin-left: 2%;
-    
+#img_section{
+    height: 95%;
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    margin-block-end: 2%;
+}
+
+#img_section img{
+    height: 100%;
+    widows: 100%;
+    border-radius: 3%;
+    padding: 1%;
+    border-style: solid;
+    border-top-color: #F70000;
+    border-block-end-color: #F70000;
+    /* border-style: solid;
+    border-color: coral; */
 }
 
 .section_fundo p{
@@ -188,7 +203,7 @@ section{
 
 #sectionButon {
     height: 75%;
-    background: rgba(128, 128, 128, 0.411);
+    /* background: rgba(128, 128, 128, 0.411); */
     display: flex;
     justify-content: center;
     align-items: center;
