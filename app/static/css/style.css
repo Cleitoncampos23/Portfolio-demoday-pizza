@@ -10,9 +10,10 @@ body {
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
                         'section section section section'
-                        'aside aside aside aside';
+                        'aside aside aside aside'
+                        'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 100vh 100vh;
+    grid-template-rows: 12vh 110vh 100vh 100vh 20vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -37,7 +38,7 @@ header {
 }
 
 #bg_video{
-    /* background: url(../videos/bg_pizza3.mp4) no-repeat; */
+    background: url(../videos/bg_pizza3.mp4) no-repeat;
 	position: fixed; 
 	right: 0;
 	min-width: 100%; 
@@ -237,8 +238,9 @@ section{
 
 aside{
     grid-area: aside;
-    background-image:url(../img/aside-fundo.jpg);
-    background-size: cover;
+    background-color: #F70000;
+    /* background-image:url(../img/aside-fundo.jpg);
+    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,4 +266,9 @@ aside{
     width: 100px;
     height: 100px;
     margin-top: 50px;  
+}
+
+footer{
+    grid-area: footer;
+    background-color: #535353;
 }
