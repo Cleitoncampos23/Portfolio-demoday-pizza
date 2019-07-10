@@ -213,7 +213,8 @@ section{
 }
 
 
-#sectionButon h1 {
+#sectionButon #pergunta_section{
+    color: black;
     align-items: stretch;
     font-size: 35pt;
 
