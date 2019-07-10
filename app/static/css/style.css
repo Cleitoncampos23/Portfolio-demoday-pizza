@@ -12,7 +12,11 @@ body {
                         'section section section section'
                         'aside aside aside aside';
 
+<<<<<<< HEAD
     grid-template-rows: 12vh 110vh 65vh 100vh; 
+=======
+    grid-template-rows: 12vh 110vh 100vh 60vh; 
+>>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -34,8 +38,16 @@ body {
 
 header {
     grid-area: header;
-    background-image: url(../img/banner_index.jpg);
-    background-size: cover;
+}
+
+#bg_video{
+    /* background: url(../videos/bg_pizza3.mp4) no-repeat; */
+	position: fixed; 
+	right: 0;
+	min-width: 100%; 
+	min-height: 100%; 
+	z-index: -1000;
+	background-size: cover; 
 }
 
 .fundoTransparente{
@@ -164,10 +176,25 @@ section{
     align-items: center;
 }
 
-.section_fundo img{
-    height: 320px;
-    margin-left: 2%;
-    
+#img_section{
+    height: 95%;
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    margin-block-end: 2%;
+}
+
+#img_section img{
+    height: 100%;
+    widows: 100%;
+    border-radius: 3%;
+    padding: 1%;
+    border-style: solid;
+    border-top-color: #F70000;
+    border-block-end-color: #F70000;
+    /* border-style: solid;
+    border-color: coral; */
 }
 
 .section_fundo p{
@@ -178,7 +205,7 @@ section{
 
 #sectionButon {
     height: 75%;
-    background: rgba(128, 128, 128, 0.411);
+    /* background: rgba(128, 128, 128, 0.411); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +213,14 @@ section{
 
     
 }
+<<<<<<< HEAD
 #sectionButon h1 {
+=======
+
+
+#sectionButon #pergunta_section{
+    color: black;
+>>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
     align-items: stretch;
     font-size: 35pt;
 }
@@ -214,6 +248,7 @@ section{
 
 aside{
     grid-area: aside;
+<<<<<<< HEAD
     background-image:url(../img/aside-fundo.jpg);
     background-size: cover;
     display: flex;
@@ -242,4 +277,7 @@ aside{
     height: 100px;
     margin-top: 50px;  
 
+=======
+    background-color: lightcoral;
+>>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
 }
