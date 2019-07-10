@@ -12,11 +12,7 @@ body {
                         'section section section section'
                         'aside aside aside aside';
 
-<<<<<<< HEAD
-    grid-template-rows: 12vh 110vh 65vh 100vh; 
-=======
-    grid-template-rows: 12vh 110vh 100vh 60vh; 
->>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
+    grid-template-rows: 12vh 110vh 100vh 100vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -210,17 +206,10 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    
 }
-<<<<<<< HEAD
-#sectionButon h1 {
-=======
-
 
 #sectionButon #pergunta_section{
     color: black;
->>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
     align-items: stretch;
     font-size: 35pt;
 }
@@ -248,7 +237,6 @@ section{
 
 aside{
     grid-area: aside;
-<<<<<<< HEAD
     background-image:url(../img/aside-fundo.jpg);
     background-size: cover;
     display: flex;
@@ -276,8 +264,4 @@ aside{
     width: 100px;
     height: 100px;
     margin-top: 50px;  
-
-=======
-    background-color: lightcoral;
->>>>>>> dd092d22c846fd55abecbc6f71478062ab6e8ea2
 }
