@@ -9,9 +9,10 @@ body {
     display: grid;
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
-                        'section section section section';
+                        'section section section section'
+                        'aside aside aside aside';
 
-    grid-template-rows: 12vh 110vh 65vh; 
+    grid-template-rows: 12vh 110vh 65vh 100vh; 
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -37,7 +38,7 @@ header {
     background-size: cover;
 }
 
-.fundoTransparente {
+.fundoTransparente{
     width: 100%;
     height: 100%;
     display: flex;
@@ -46,7 +47,7 @@ header {
     background-color: rgba(0, 0, 0, 0.438);
 }
 
-#TextoSaboroso{
+#TextoHeader{
     width: 50%;
     height: 25%;
     display: flex;
@@ -110,7 +111,6 @@ header {
 #formdiv form input::placeholder {
     font-size: 16px;
     padding-left: 5px;
-   
 }
 
 #formdiv form select {
@@ -119,9 +119,8 @@ header {
     padding-left: 5px;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.267); 
+    background-color: rgba(0, 0, 0, 0.137); 
     border: solid 0.5px rgba(245, 245, 245, 0.253);
-
 }
 
 #formdiv form button {
@@ -187,12 +186,9 @@ section{
 
     
 }
-
-
 #sectionButon h1 {
     align-items: stretch;
     font-size: 35pt;
-
 }
 
 #section_botao{
@@ -204,14 +200,46 @@ section{
     border: solid 2px black;
     font-size: 15pt;
     margin-top: 10px;
-    
 }
+
 #section_botao a {
     text-decoration: none;
-
 }
+
 #section_botao:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+aside{
+    grid-area: aside;
+    background-image:url(../img/aside-fundo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estrutura{
+    width: 90vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+#coluna1, #coluna2, #coluna3{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:15px;
+    background-color: white;
+    height: 550px;
+    width: 350px;
+}
+
+#coluna1-img img, #coluna2-img img, #coluna3-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;  
+
 }
