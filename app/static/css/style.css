@@ -9,9 +9,10 @@ body {
     display: grid;
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
-                        'section section section section';
+                        'section section section section'
+                        'aside aside aside aside';
 
-    grid-template-rows: 12vh 110vh 65vh; 
+    grid-template-rows: 12vh 110vh 65vh 60vh; 
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -33,8 +34,15 @@ body {
 
 header {
     grid-area: header;
-    background-image: url(../img/banner_index.jpg);
-    background-size: cover;
+    /* background-image: url(../img/banner_index.jpg); */
+
+}
+
+
+
+#bg_video{
+    background: url(../videos/bg_pizza3.mp4);
+	z-index: -1000;
 }
 
 .fundoTransparente {
@@ -214,4 +222,9 @@ section{
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightcoral;
 }
