@@ -40,7 +40,6 @@ header {
 #bg_video{
     background: url(../videos/bg_pizza3.mp4);
     position: fixed; 
-    background-repeat: no-repeat;
 	right: 0;
 	min-width: 100%; 
 	min-height: 100%; 
@@ -181,9 +180,10 @@ aside{
 } 
 
 #coluna1, #coluna2, #coluna3{
-    text-align: center;
-    font-family: sans-serif;
-    font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: purple;
     height: 550px;
     width: 350px;
@@ -193,7 +193,33 @@ aside{
 #coluna1-img img, #coluna2-img img, #coluna3-img img{
     width: 100px;
     height: 100px;
-    margin-top: 50px;  
+    position: relative;
+    bottom: 145%;
+    /* margin-top: 50px; */
+    
+}
+
+#text_coluna{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 5%;
+
+}
+
+#text_coluna h3{
+    font-family: sans-serif;
+    font-size:18px;
+
+}
+
+#text_coluna p{
+    font-size: 10pt;
+
+
 }
 
 section{
@@ -224,27 +250,6 @@ section{
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-#img_section{
-    height: 95%;
-    width: 50%;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    margin-block-end: 2%;
-}
-
-#img_section img{
-    height: 100%;
-    widows: 100%;
-    border-radius: 3%;
-    padding: 1%;
-    border-style: solid;
-    border-top-color: #F70000;
-    border-block-end-color: #F70000;
-    /* border-style: solid;
-    border-color: coral; */
 }
 
 .section_fundo p{
