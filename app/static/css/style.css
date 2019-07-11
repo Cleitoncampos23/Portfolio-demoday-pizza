@@ -9,11 +9,11 @@ body {
     display: grid;
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
-                        'section section section section'
                         'aside aside aside aside'
+                        'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 100vh 100vh 20vh;
+    grid-template-rows: 12vh 110vh 110vh 100vh 20vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -38,8 +38,9 @@ header {
 }
 
 #bg_video{
-    background: url(../videos/bg_pizza3.mp4) no-repeat;
-	position: fixed; 
+    background: url(../videos/bg_pizza3.mp4);
+    position: fixed; 
+    background-repeat: no-repeat;
 	right: 0;
 	min-width: 100%; 
 	min-height: 100%; 
@@ -54,6 +55,8 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.438);
+    background-repeat: no-repeat;
+
 }
 
 #TextoHeader{
@@ -143,6 +146,56 @@ header {
     cursor: pointer;
 }
 
+aside{
+    grid-area: aside;
+    background-color: white;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border-top: 10px solid black;
+}
+
+#div-cliente{
+    background-color: black;
+    height:10%;
+    width: 25%;
+    margin-left: 38%;
+}
+
+#div-cliente h2{
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+}
+
+.estrutura{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block-end: 7%;
+} 
+
+#coluna1, #coluna2, #coluna3{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:15px;
+    background-color: purple;
+    height: 550px;
+    width: 350px;
+    border-radius: 6%;
+}
+
+#coluna1-img img, #coluna2-img img, #coluna3-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;  
+}
+
 section{
     grid-area: section;
     background-color:#fafafa;
@@ -156,7 +209,7 @@ section{
     background-color: black;
     height:10%;
     width: 25%;
-    margin-left: 40%;
+    margin-left: 38%;
 }
 
 #div-pizzarias h2{
@@ -169,7 +222,7 @@ section{
     background-color: #fafafa;
     height: 90%;
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -234,38 +287,6 @@ section{
     background-color: black;
     color: white;
     cursor: pointer;
-}
-
-aside{
-    grid-area: aside;
-    background-color: #F70000;
-    /* background-image:url(../img/aside-fundo.jpg);
-    background-size: cover; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.estrutura{
-    width: 90vw;
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} 
-
-#coluna1, #coluna2, #coluna3{
-    text-align: center;
-    font-family: sans-serif;
-    font-size:15px;
-    background-color: white;
-    height: 550px;
-    width: 350px;
-}
-
-#coluna1-img img, #coluna2-img img, #coluna3-img img{
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;  
 }
 
 footer{
