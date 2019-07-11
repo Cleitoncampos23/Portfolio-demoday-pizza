@@ -27,41 +27,18 @@
         </video>
     </div>
     <div id="formdiv">
-           
-        <form><br>
             <h1>Pedido!</h1>
-            <br>
-            <label class="label">Nome* </label>
-            <input  type="text" name="nome">
-
-            <label class="label">Endereço*</label>
-            <input  type="text" name="nome">
-
-            <label class="label">Quantidade*</label>
-            <select name="--Selecione--">
-                <option disabled="disable"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="+5">+5</option>
-            </select><br>
-
-                <label class="label">Data*</label>
-                <input  type="date" name="Data" class="formDate">
-                <label class="label">Hora*</label>
-                <input  type="time" name="Hora" class="formDate" placeholder="dd/mm/aaaa">
-                <label class="label">Preço*</label>
-            <select name="Preço">
-                <option value="--Selecione--">--Selecione--</option>
-                <option value="35.69">R$ 35.69</option>
-                <option value="22.80">R$ 22.80</option>
-                <option value="29.40">R$ 29.40</option>
-            </select><br>
-            <button>Monte Agora</button>
+             {% if msg %}
+           <p>{{ msg }} </p>
+              {% endif %}
+    
+           <form method='POST'>
+               <div class="inputs">
+                   {% csrf_token %}
+                   {{ form }}
+                   <button>Monte Agora</button>
+                </div>
            </form>
-        </div>
     </div>
 </header>
 
@@ -128,6 +105,7 @@
     </div>
 </div>
 </section>
+
 
 <footer>f</footer>
 

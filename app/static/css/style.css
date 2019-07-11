@@ -13,7 +13,7 @@ body {
                         'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 110vh 100vh 20vh;
+    grid-template-rows: 12vh 110vh 110vh 90vh 20vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -80,7 +80,7 @@ header {
     align-content: center;
     border-top: 10px solid #c50000e0;
     border-block-end: 10px solid#c50000e0;
-   
+    position: relative; 
 }
 
 #formdiv form{
@@ -95,46 +95,32 @@ header {
 
 #formdiv form label {
     color: white;
-    font-size: 18px;
-    
-}
-.label {
-    margin-left: -220%;
+    font-size: 18px;  
 }
 
-#formdiv form h1 {  
+#formdiv h1 {  
     color: white;   
 }
 
-#formdiv form input {
+.inputs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+}
+
+#formdiv input{
     width: 250px;
     height: 40px;
     border: none;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.267); 
     border: solid 0.5px rgba(245, 245, 245, 0.253);
+    margin-right: 5%;
 }
 
-#formdiv form input:focus{
-    border: solid 2px whitesmoke;
-}
-
-#formdiv form input::placeholder {
-    font-size: 16px;
-    padding-left: 5px;
-}
-
-#formdiv form select {
-    width: 250px;
-    height: 40px;
-    padding-left: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.137); 
-    border: solid 0.5px rgba(245, 245, 245, 0.253);
-}
-
-#formdiv form button {
+#formdiv form button{
     width: 250px;
     height: 40px;
     border: none;
@@ -184,7 +170,7 @@ aside{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: purple;
+    background-color: whitesmoke;
     height: 550px;
     width: 350px;
     border-radius: 6%;
@@ -293,6 +279,8 @@ section{
     color: white;
     cursor: pointer;
 }
+
+
 
 footer{
     grid-area: footer;
