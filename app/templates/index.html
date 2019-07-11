@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,35 +11,36 @@
 
     <title>Pizza</title>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#">Home</a>
         <a href="#">Pizzarias</a>
-       <a href="#">Contato</a>
-   </nav>
-   <header>
-   <div class="fundoTransparente">
-    <div id="TextoHeader">
-        
-        <h1>MONTE SUA PIZZA</h1>
+        <a href="#">Contato</a>
+    </nav>
+    <header>
+        <div class="fundoTransparente">
+            <div id="TextoHeader">
 
-        <video autoplay loop id="bg_video">
+                <h1>MONTE SUA PIZZA</h1>
+
+                <video autoplay loop id="bg_video">
             <source src="../static/videos/bg_pizza3.mp4" type="video/mp4">
         </video>
-    </div>
-    <div id="formdiv">
-           
-        <form><br>
-            <h1>Pedido!</h1>
-            <br>
-            <label class="label">Nome* </label>
-            <input  type="text" name="nome">
+            </div>
+            <div id="formdiv">
 
-            <label class="label">Endereço*</label>
-            <input  type="text" name="nome">
+                <form><br>
+                    <h1>Pedido!</h1>
+                    <br>
+                    <label class="label">Nome* </label>
+                    <input type="text" name="nome">
 
-            <label class="label">Quantidade*</label>
-            <select name="--Selecione--">
+                    <label class="label">Endereço*</label>
+                    <input type="text" name="nome">
+
+                    <label class="label">Quantidade*</label>
+                    <select name="--Selecione--">
                 <option disabled="disable"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -48,88 +50,112 @@
                 <option value="+5">+5</option>
             </select><br>
 
-                <label class="label">Data*</label>
-                <input  type="date" name="Data" class="formDate">
-                <label class="label">Hora*</label>
-                <input  type="time" name="Hora" class="formDate" placeholder="dd/mm/aaaa">
-                <label class="label">Preço*</label>
-            <select name="Preço">
+                    <label class="label">Data*</label>
+                    <input type="date" name="Data" class="formDate">
+                    <label class="label">Hora*</label>
+                    <input type="time" name="Hora" class="formDate" placeholder="dd/mm/aaaa">
+                    <label class="label">Preço*</label>
+                    <select name="Preço">
                 <option value="--Selecione--">--Selecione--</option>
                 <option value="35.69">R$ 35.69</option>
                 <option value="22.80">R$ 22.80</option>
                 <option value="29.40">R$ 29.40</option>
             </select><br>
-            <button>Monte Agora</button>
-           </form>
+                    <button>Monte Agora</button>
+                </form>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<aside>
+    <aside>
         <div id="div-cliente">
-            <h2>Pizzarias</h2> 
+            <h2>Pizzarias</h2>
         </div>
 
-    <div class="estrutura">
+        <div class="estrutura">
 
-        <div id="coluna1">
-            <div id="coluna1-img">
-                <img src="../static/img/pizza1.png" alt="">
+            <div id="coluna1">
+                <div id="coluna1-img">
+                    <img src="../static/img/pizza1.png" alt="">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
             </div>
 
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+            <div id="coluna2">
+
+                <div id="coluna2-img">
+                    <img src="../static/img/pizza2.png" alt="icone1">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
+            </div>
+
+            <div id="coluna3">
+
+                <div id="coluna3-img">
+                    <img src="../static/img/pizza3.png" alt="icone3">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
             </div>
 
         </div>
+    </aside>
 
-        <div id="coluna2">
+    <section>
+        <div id="div-pizzarias">
+            <h2>Pizzarias</h2>
+        </div>
 
-            <div id="coluna2-img">
-                <img src="../static/img/pizza2.png" alt="icone1">
+        <div class="section_fundo">
+
+            <div id="sectionButon">
+                <p id="pergunta_section">Lorem ipsum dolor sit amet consectetur?</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                <button id="section_botao">Clique aqui</button>
             </div>
+        </div>
+    </section>
 
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+    <footer>
+        <div id="iconeFooter">
+            <div id="icon">
+                <div class="redonda">
+
+                </div>
+                <div class="redonda">
+
+                </div>
+                <div class="redonda">
+
+                </div>
             </div>
+        </div>
+        <div id="footerForm">
+            <form action="">
+                <input type="email" name="email" placeholder="Endereço de email">
+
+                <button>Enviar</button>
+            </form>
 
         </div>
 
-        <div id="coluna3">
-
-            <div id="coluna3-img">
-                <img src="../static/img/pizza3.png" alt="icone3">
-            </div>
-
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
-            </div>
-
-        </div>
-
-    </div>
-</aside>
-
-<section>
-    <div id="div-pizzarias">
-        <h2>Pizzarias</h2> 
-    </div>
-
-<div class="section_fundo">
-    
-    <div id="sectionButon">
-        <p id="pergunta_section">Lorem ipsum dolor sit amet consectetur?</p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
-        <button id="section_botao">Clique aqui</button>
-    </div>
-</div>
-</section>
-
-<footer>f</footer>
+    </footer>
 
 </body>
+
 </html>
