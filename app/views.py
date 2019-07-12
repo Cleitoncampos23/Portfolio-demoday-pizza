@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from app.forms import PedidoForm
+from app.forms import FormClienteForm
 
 # Create your views here.
 def mostrar_index(request):
-    formulario = PedidoForm(request.POST or None)
+    formulario = FormClienteForm(request.POST or None)
     msg = ''
 
     if formulario.is_valid():
         formulario.save()
-        formulario = PedidoForm()
+        formulario = FormClienteForm()
         msg = 'Pedido realizado com sucesso'
 
     contexto = {
@@ -18,3 +18,5 @@ def mostrar_index(request):
     return render(request, 'index.html', contexto)
 
 
+def mostrar_pedidos(request):
+    return render(request, 'pedidos.html')
