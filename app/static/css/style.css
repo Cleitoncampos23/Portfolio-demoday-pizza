@@ -39,8 +39,8 @@ header {
     grid-area: header;
 }
 
-#bg_video {
-    background: url(../videos/bg_pizza3.mp4);
+#bg_gif{
+    /* background: url(../videos/bg_pizza3.mp4); */
     position: fixed;
     right: 0;
     min-width: 100%;
@@ -277,7 +277,6 @@ section {
 
 footer{
     grid-area: footer;
-    background-color: #535353;
 }
 
 #iconeFooter {
