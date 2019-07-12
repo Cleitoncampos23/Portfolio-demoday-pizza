@@ -1,9 +1,9 @@
 from django import forms
-from app.models import Pedido
+from app.models import FormCliente
 
-class PedidoForm(forms.ModelForm):
+class FormClienteForm(forms.ModelForm):
     class Meta:
-        model = Pedido
+        model = FormCliente
         fields = [
             'nome',
             'endereco',
