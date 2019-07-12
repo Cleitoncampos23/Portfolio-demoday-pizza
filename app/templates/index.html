@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,25 @@
 
     <title>Pizza</title>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#">Home</a>
         <a href="#pizzaria">Pizzarias</a>
        <a href="#contato">Contato</a>
    </nav>
-   <header>
+   
+<header>
    <div class="fundoTransparente">
-    <div id="TextoHeader">
+         <div id="TextoHeader">
         
-        <h1>MONTE SUA PIZZA</h1>
+          <h1>MONTE SUA PIZZA</h1>
 
-        <video controls autoplay loop id="bg_video">
+          <video controls autoplay loop id="bg_video">
             <source src="../static/videos/bg_pizza3.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div id="formdiv">
+          </video>
+         </div>
+        <div id="formdiv">
             <h1>Pedido!</h1>
              {% if msg %}
            <p>{{ msg }} </p>
@@ -39,75 +42,104 @@
                    <button>Monte Agora</button>
                 </div>
            </form>
+        </div>
     </div>
 </header>
+    
 
 <aside>
         <div id="div-cliente">
-            <h2>Pizzarias</h2> 
+            <h2>Pizzarias</h2>
         </div>
 
-    <div class="estrutura">
+        <div class="estrutura">
 
-        <div id="coluna1">
-            <div id="coluna1-img">
-                <img src="../static/img/pizza1.png" alt="">
+            <div id="coluna1">
+                <div id="coluna1-img">
+                    <img src="../static/img/pizza1.png" alt="">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
             </div>
 
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+            <div id="coluna2">
+
+                <div id="coluna2-img">
+                    <img src="../static/img/pizza2.png" alt="icone1">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
+            </div>
+
+            <div id="coluna3">
+
+                <div id="coluna3-img">
+                    <img src="../static/img/pizza3.png" alt="icone3">
+                </div>
+
+                <div id="text_coluna">
+                    <h3>Editable Theme</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                </div>
+
             </div>
 
         </div>
-
-        <div id="coluna2">
-
-            <div id="coluna2-img">
-                <img src="../static/img/pizza2.png" alt="icone1">
-            </div>
-
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
-            </div>
-
-        </div>
-
-        <div id="coluna3">
-
-            <div id="coluna3-img">
-                <img src="../static/img/pizza3.png" alt="icone3">
-            </div>
-
-            <div id="text_coluna">
-             <h3>Editable Theme</h3>  
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
-            </div>
-
-        </div>
-
-    </div>
-</aside>
+    </aside>
 
 <section>
-    <div id="div-pizzarias">
-        <h2>Pizzarias</h2> 
-    </div>
+        <div id="div-pizzarias">
+            <h2>Pizzarias</h2>
+        </div>
 
-<div class="section_fundo">
-    
-    <div id="sectionButon">
-        <p id="pergunta_section">Lorem ipsum dolor sit amet consectetur?</p>
+        <div class="section_fundo">
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
-        <button id="section_botao">Clique aqui</button>
-    </div>
-</div>
+            <div id="sectionButon">
+                <p id="pergunta_section">Lorem ipsum dolor sit amet consectetur?</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
+                <button id="section_botao">Clique aqui</button>
+            </div>
+        </div>
 </section>
 
+<a name="contato"> 
 
-<a name="contato"> <footer>f</footer></a>
+<footer>
+        <div id="iconeFooter">
+            <div id="icon">
+                <div class="redonda">
+
+                </div>
+                <div class="redonda">
+
+                </div>
+                <div class="redonda">
+
+                </div>
+            </div>
+        </div>
+        <div id="footerForm">
+            <form action="">
+                <input type="email" name="email" placeholder="Endereço de email">
+
+                <button>Enviar</button>
+            </form>
+
+
+        </div>
+
+</footer>
+
 
 </body>
+
 </html>
