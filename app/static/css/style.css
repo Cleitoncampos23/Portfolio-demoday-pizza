@@ -33,6 +33,10 @@ body {
 
 }
 
+.navbar a:hover{
+    border-bottom: 2px solid red;
+}
+
 header {
     grid-area: header;
 }
