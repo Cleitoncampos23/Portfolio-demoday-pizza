@@ -98,6 +98,7 @@ class Massa(models.Model):
         ('cb', 'chocolate branco'),
         ('mg', 'morango'),
         ('dl', 'doce de leite'),
+        ('br', 'brigaderio'),
     ]
 
 
