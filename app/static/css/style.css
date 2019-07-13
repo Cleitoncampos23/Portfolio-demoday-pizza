@@ -9,6 +9,7 @@ body {
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
                         'aside aside aside aside'
+                        /* 'article article article article' */
                         'section section section section'
                         'footer footer footer footer';
 
@@ -203,6 +204,14 @@ aside {
 #text_coluna p {
     font-size: 10pt;
 }
+
+/* article{
+    grid-area: article;
+}
+
+article .container{
+    background-size: cover;
+} */
 
 section {
     grid-area: section;

@@ -6,9 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta http-equiv="refresh" content="1"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script defer src="script/scripts.js"></script> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %} ">
-
+    
     <title>Pizza</title>
 </head>
 
@@ -18,127 +21,128 @@
         <a href="#comofunciona">Como Funciona</a>
         <a href="#pizzarias">Pizzarias</a>
         <a href="#contato">Contato</a>
-   </nav>
-   
-<header>
-   <div class="fundoTransparente">
-         <div id="TextoHeader">
-        
-          <h1>MONTE SUA PIZZA</h1>
-          <img id="bg_gif" src="../static/videos/bg_pizza5.gif" alt="">
-         </div>
-
-        <div id="formdiv">
-            <h1>Pedido!</h1>
-             {% if msg %}
-           <p>{{ msg }} </p>
-              {% endif %}
+    </nav>
     
-           <form method='POST'>
-               <div class="inputs">
-                   {% csrf_token %}
-                   {{ form }}
-                   <button>Monte Agora</button>
-                </div>
-           </form>
+    <header>
+        <div class="fundoTransparente">
+            <div id="TextoHeader">
+                
+                <h1>MONTE SUA PIZZA</h1>
+                <img id="bg_gif" src="../static/videos/bg_pizza5.gif" alt="">
+            </div>
+            
+            <div id="formdiv">
+                <h1>Pedido!</h1>
+                {% if msg %}
+                <p>{{ msg }} </p>
+                {% endif %}
+                
+                <form method='POST'>
+                    <div class="inputs">
+                        {% csrf_token %}
+                        {{ form }}
+                        <button>Monte Agora</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
     
-
-<aside>
+    
+    <aside>
         <div id="div-cliente">
             <h2>Como Funciona</h2>
         </div>
-
+        
         <div class="estrutura">
-
+            
             <div id="coluna1">
                 <div id="coluna1-img">
                     <img src="../static/img/pizza1.png" alt="">
                 </div>
-
+                
                 <div id="text_coluna">
                     <h3>Editable Theme</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
                 </div>
-
+                
             </div>
-
+            
             <div id="coluna2">
-
+                
                 <div id="coluna2-img">
                     <img src="../static/img/pizza2.png" alt="icone1">
                 </div>
-
+                
                 <div id="text_coluna">
                     <h3>Editable Theme</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
                 </div>
-
+                
             </div>
-
+            
             <div id="coluna3">
-
+                
                 <div id="coluna3-img">
                     <img src="../static/img/pizza3.png" alt="icone3">
                 </div>
-
+                
                 <div id="text_coluna">
                     <h3>Editable Theme</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
                 </div>
-
+                
             </div>
-
+            
         </div>
     </aside>
-
-<section>
+    
+    
+    <section>
         <div id="div-pizzarias">
             <h2>Pizzarias</h2>
         </div>
-
+        
         <div class="section_fundo">
-
+            
             <div id="sectionButon">
                 <p id="pergunta_section">Lorem ipsum dolor sit amet consectetur?</p>
-
+                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid distinctio eum vero eligendi. Quo ea nesciunt libero quas, est cum, magnam reprehenderit, quia ducimus laudantium distinctio aspernatur minus placeat.</p>
                 <button id="section_botao">Clique aqui</button>
             </div>
         </div>
-</section>
-
-<a name="contato"> 
-
-<footer>
-        <div id="iconeFooter">
-            <div id="icon">
-                <div class="redonda">
-
-                </div>
-                <div class="redonda">
-
-                </div>
-                <div class="redonda">
-
+    </section>
+    
+    <a name="contato"> 
+        
+        <footer>
+            <div id="iconeFooter">
+                <div id="icon">
+                    <div class="redonda">
+                        
+                    </div>
+                    <div class="redonda">
+                        
+                    </div>
+                    <div class="redonda">
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="footerForm">
-            <form action="">
-                <input type="email" name="email" placeholder="Endereço de email">
-
-                <button>Enviar</button>
-            </form>
-
-
-        </div>
-
-</footer>
-
-
+            <div id="footerForm">
+                <form action="">
+                    <input type="email" name="email" placeholder="Endereço de email">
+                    
+                    <button>Enviar</button>
+                </form>
+                
+                
+            </div>
+            
+        </footer>
+        
+        
 </body>
-
+    
 </html>
