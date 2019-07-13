@@ -36,6 +36,11 @@ body {
     border-bottom: 2px solid red;
 }
 
+.navbar #iconnav{
+    height: 500%;
+    width: 25%;
+}
+
 header {
     grid-area: header;
 }
