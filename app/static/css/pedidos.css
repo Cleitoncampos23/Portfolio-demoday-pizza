@@ -30,3 +30,8 @@ body {
 .navbar a:hover{
     border-bottom: 2px solid red;
 }
+
+.navbar #iconnav{
+    height: 500%;
+    width: 25%;
+}
