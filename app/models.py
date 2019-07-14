@@ -15,98 +15,104 @@ class FormCliente(models.Model):
 
 class Massa(models.Model):
     massa_opcoes = [
-        ('np', 'napolitana'),
-        ('ni', 'nova-iorquina'),
-        ('sn', 'siciliana'),
-        ('vt', 'vegetariana'),
-        ('vg', 'vegana'),
-        ('in', 'integral'),
+    ('np', 'napolitana'),
+    ('ni', 'nova-iorquina'),
+    ('sn', 'siciliana'),
+    ('vt', 'vegetariana'),
+    ('vg', 'vegana'),
+    ('in', 'integral'),
+
     ]
+
     molho_opcoes = [
-        ('tr', 'tradicional'),
-        ('gz', 'gorgonzola'),
-        ('ps', 'parisiense'),
-        ('pc', 'picante'),
-        ('sj', 'soja'),
+    ('tr', 'tradicional'),
+    ('gz', 'gorgonzola'),
+    ('ps', 'parisiense'),
+    ('pc', 'picante'),
+    ('sj', 'soja'),
 
     ]
 
     ingredientes_veg = [
-        ('tf', 'tofu'),
-        ('mc', 'muçarela de castanha'),
-        ('cj', 'carne de jaca'),
-        ('pa', 'parmesão de amendoim'),
-        ('ev', 'ervilha'),
-        ('ap', 'alho-poró'),
-        ('cf', 'couve-flor'),
-        ('rc', 'rúcula'),
-        ('ch', 'champignon'),
-        ('tm', 'tomate'),
-        ('tc', 'tomate cereja'),
-        ('ab', 'abobrinha'),
-        ('mj', 'manjerião'),
-        ('pv', 'presunto vegetal'),
-        ('az', 'azeitona'),
-        ('ap', 'azeitona preta'),
-        ('or', 'oregano'),
+    ('tf', 'tofu'),
+    ('mc', 'muçarela de castanha'),
+    ('cj', 'carne de jaca'),
+    ('pa', 'parmesão de amendoim'),
+    ('ev', 'ervilha'),
+    ('ap', 'alho-poró'),
+    ('cf', 'couve-flor'),
+    ('rc', 'rúcula'),
+    ('ch', 'champignon'),
+    ('tm', 'tomate'),
+    ('tc', 'tomate cereja'),
+    ('ab', 'abobrinha'),
+    ('mj', 'manjerião'),
+    ('pv', 'presunto vegetal'),
+    ('az', 'azeitona'),
+    ('ap', 'azeitona preta'),
+    ('or', 'oregano'),
 
     ]
 
     ingredientes_integral = [
-        ('mc', 'muçarela'),
-        ('pa', 'parmesão'),
-        ('fg', 'frango'),
-        ('at', 'atum'),
-        ('br', 'brócolis'),
-        ('gz', 'gorgonzola'),
-        ('ov', 'ovo'),
-        ('tm', 'tomate'),
-        ('tc', 'tomate cereja'),
-        ('pl', 'palmito'),
-        ('az', 'azeitona'),
-        ('ap', 'azeitona preta'),
-        ('cb', 'cebola'),
-        ('ml', 'milho'),
+    ('mc', 'muçarela'),
+    ('pa', 'parmesão'),
+    ('fg', 'frango'),
+    ('at', 'atum'),
+    ('br', 'brócolis'),
+    ('gz', 'gorgonzola'),
+    ('ov', 'ovo'),
+    ('tm', 'tomate'),
+    ('tc', 'tomate cereja'),
+    ('pl', 'palmito'),
+    ('az', 'azeitona'),
+    ('ap', 'azeitona preta'),
+    ('cb', 'cebola'),
+    ('ml', 'milho'),
 
     ]
 
     ingredientes_opcoes = [
-        ('mc', 'muçarela'),
-        ('pa', 'parmesão'),
-        ('tm', 'tomate'),
-        ('tc', 'tomate cereja'),
-        ('mj', 'manjerião'),
-        ('az', 'azeitona'),
-        ('ap', 'azeitona preta'),
-        ('or', 'oregano'),
-        ('bc', 'bacon'),
-        ('ps', 'presunto'),
-        ('pr', 'peru'),
-        ('fg', 'frango'),
-        ('ov', 'ovo'),
-        ('mc', 'milho'),
-        ('cy', 'catupiry'),
-        ('ch', 'cheddar'),
-        
+    ('mc', 'muçarela'),
+    ('pa', 'parmesão'),
+    ('tm', 'tomate'),
+    ('tc', 'tomate cereja'),
+    ('mj', 'manjerião'),
+    ('az', 'azeitona'),
+    ('ap', 'azeitona preta'),
+    ('or', 'oregano'),
+    ('bc', 'bacon'),
+    ('ps', 'presunto'),
+    ('pr', 'peru'),
+    ('fg', 'frango'),
+    ('ov', 'ovo'),
+    ('mc', 'milho'),
+    ('cy', 'catupiry'),
+    ('ch', 'cheddar'),
+
     ]
 
     ingredientes_doce = [
-        ('ma', 'maçã'),
-        ('bn', 'banana'),
-        ('nt', 'nutella'),
-        ('ch', 'chocolate'),
-        ('cb', 'chocolate branco'),
-        ('mg', 'morango'),
-        ('dl', 'doce de leite'),
-        ('br', 'brigaderio'),
+    ('ma', 'maçã'),
+    ('bn', 'banana'),
+    ('nt', 'nutella'),
+    ('ch', 'chocolate'),
+    ('cb', 'chocolate branco'),
+    ('mg', 'morango'),
+    ('dl', 'doce de leite'),
+    ('br', 'brigaderio'),
+
     ]
 
-    massa = models.CharField(max_length=60, choices=massa_opcoes)
-    molho = models.CharField(max_length=60, choices=molho_opcoes)
-    ingredientes_salgada = models.CharField(max_length=60, choices=ingredientes_opcoes)
-    ingredientes_integral = models.CharField(max_length=60, choices=ingredientes_integral)
-    ingredientes_doce = models.CharField(max_length=60, choices=ingredientes_veg)
-    ingredientes_veg = models.CharField(max_length=60, choices=ingredientes_doce)
+    massa = models.CharField(max_length=60, choices=massa_opcoes, default="")
+    molho = models.CharField(max_length=60, choices=molho_opcoes, default="")
+    ingredientes_salgada = models.CharField(max_length=60, choices=ingredientes_opcoes, default="")
+    ingredientes_integral = models.CharField(max_length=60, choices=ingredientes_integral, default="")
+    ingredientes_doce = models.CharField(max_length=60, choices=ingredientes_doce, default="")
+    ingredientes_veg = models.CharField(max_length=60, choices=ingredientes_veg, default="")
+
+    def __str__(self):
+        return self.massa
 
 
 
