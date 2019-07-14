@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas:'navbar navbar navbar navbar';
+
+    grid-template-rows: 12vh;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid red;
+}
+
+.navbar #iconnav{
+    height: 500%;
+    width: 25%;
+}
