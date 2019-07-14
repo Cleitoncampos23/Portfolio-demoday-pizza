@@ -31,7 +31,7 @@ class Massa(models.Model):
 
     ]
 
-    ingredientes_veg_opcoes = [
+    ingredientes_veg = [
         ('tf', 'tofu'),
         ('mc', 'muçarela de castanha'),
         ('cj', 'carne de jaca'),
@@ -52,7 +52,7 @@ class Massa(models.Model):
 
     ]
 
-    ingredientes_integral_opcoes = [
+    ingredientes_integral = [
         ('mc', 'muçarela'),
         ('pa', 'parmesão'),
         ('fg', 'frango'),
@@ -90,7 +90,7 @@ class Massa(models.Model):
         
     ]
 
-    ingredientes_doce_opcoes = [
+    ingredientes_doce = [
         ('ma', 'maçã'),
         ('bn', 'banana'),
         ('nt', 'nutella'),
@@ -100,6 +100,14 @@ class Massa(models.Model):
         ('dl', 'doce de leite'),
         ('br', 'brigaderio'),
     ]
+
+    massa = models.CharField(max_length=60, choices=massa_opcoes)
+    molho = models.CharField(max_length=60, choices=molho_opcoes)
+    ingredientes_salgada = models.CharField(max_length=60, choices=ingredientes_opcoes)
+    ingredientes_integral = models.CharField(max_length=60, choices=ingredientes_integral)
+    ingredientes_doce = models.CharField(max_length=60, choices=ingredientes_veg)
+    ingredientes_veg = models.CharField(max_length=60, choices=ingredientes_doce)
+
 
 
 
