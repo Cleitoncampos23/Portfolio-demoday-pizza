@@ -9,11 +9,11 @@ body {
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
                         'aside aside aside aside'
-                        /* 'article article article article' */
+                        'article article article article'
                         'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 110vh 90vh 20vh;
+    grid-template-rows: 12vh 110vh 110vh 90vh 90vh 20vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -210,13 +210,16 @@ aside {
     font-size: 10pt;
 }
 
-/* article{
+article{
     grid-area: article;
 }
 
-article .container{
+#carouselExampleIndicators{
     background-size: cover;
-} */
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
 
 section {
     grid-area: section;
