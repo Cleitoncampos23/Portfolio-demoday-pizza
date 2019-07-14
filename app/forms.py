@@ -25,3 +25,39 @@ class MassaForm(forms.ModelForm):
             'ingredientes_doce',
             'ingredientes_veg',
         ]
+
+# class MassaForm(forms.ModelForm):
+#     class Meta:
+#         model = Massa
+#         fields = [
+#             'molho',
+#         ]
+
+# class MassaForm(forms.ModelForm):
+#     class Meta:
+#         model = Massa
+#         fields = [
+#             'ingredientes_salgada',
+#         ]
+
+# class MassaForm(forms.ModelForm):
+#     class Meta:
+#         model = Massa
+#         fields = [
+#             'ingredientes_integral',
+        
+#         ]
+
+# class MassaForm(forms.ModelForm):
+#     class Meta:
+#         model = Massa
+#         fields = [
+#             'ingredientes_doce',
+#         ]
+
+# class MassaForm(forms.ModelForm):
+#     class Meta:
+#         model = Massa
+#         fields = [
+#             'ingredientes_veg',
+#         ]
