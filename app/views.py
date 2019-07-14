@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from app.forms import FormClienteForm
+from app.forms import MassaForm
 
 # Create your views here.
 def mostrar_index(request):
