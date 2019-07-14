@@ -13,3 +13,15 @@ class FormClienteForm(forms.ModelForm):
             'cidade',
             'pizzarias',
         ]
+
+class Massa(forms.ModelForm):
+    class Meta:
+        model = Massa
+        fields = [
+            'massa',
+            'molho',
+            'ingredientes_salgada',
+            'ingredientes_integral',
+            'ingredientes_doce',
+            'ingredientes_veg',
+        ]
