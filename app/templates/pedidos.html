@@ -20,4 +20,10 @@
         <a href="#contato">Contato</a>
    </nav>
 
-<form></form>
+
+<h1>ESCOLHA O TIPO DE PIZZA</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <a href=><button>Monte Agora</button></a>
+</form>
