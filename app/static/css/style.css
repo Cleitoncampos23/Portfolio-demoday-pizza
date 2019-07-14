@@ -210,13 +210,16 @@ aside {
     font-size: 10pt;
 }
 
-/* article{
+article{
     grid-area: article;
 }
 
-article .container{
+#carouselExampleIndicators{
     background-size: cover;
-} */
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
 
 section {
     grid-area: section;
