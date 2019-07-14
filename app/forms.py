@@ -14,7 +14,7 @@ class FormClienteForm(forms.ModelForm):
             'pizzarias',
         ]
 
-class Massa(forms.ModelForm):
+class MassaForm(forms.ModelForm):
     class Meta:
         model = Massa
         fields = [
