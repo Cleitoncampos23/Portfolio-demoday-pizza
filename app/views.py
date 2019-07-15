@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from app.forms import FormClienteForm
 from app.forms import MassaForm
 
@@ -11,6 +11,7 @@ def mostrar_index(request):
         formulario.save()
         formulario = FormClienteForm()
         msg = 'Pedido realizado com sucesso'
+        return redirect("pedidos/")
 
 
     contexto = {
@@ -20,14 +21,14 @@ def mostrar_index(request):
     return render(request, 'index.html', contexto)
 
 
-def mostrar_pedidos(request):
-         form = MassaForm(request.POST or None)
+def mostrar_pedidos(request, tipo):
+    form = MassaForm(tipo, request.POST or None)
+                
+    if form.is_valid():
+        form.save()
 
-         if form.is_valid():
-             form.save()
-             form = MassaForm()
     
-         return render(request, 'pedidos.html',  {'form': form})
+    return render(request, 'pedidos.html',  {'form': form})
 
 def mostrar_pedido1(request):
     return render(request, 'pedido1.html', {'form': form})
