@@ -13,7 +13,7 @@ body {
                         'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 110vh 90vh 90vh 20vh;
+    grid-template-rows: 12vh 110vh 90vh 105vh 90vh 20vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 #formdiv {
-    margin-top: -2%;
+    margin-block-end: -10%;
     width: 23%;
     height: 80%;
     background-color: rgba(0, 0, 0, 0.555);
@@ -92,7 +92,7 @@ header {
 
 #formdiv form {
     width: 23%;
-    height: 96%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +106,8 @@ header {
 
 #formdiv h1 {  
     color: white;   
+    margin-top:15%;
+
 }
 
 .inputs {
@@ -127,6 +129,7 @@ header {
 }
 
 #formdiv form button{
+    margin-top:10%;
     width: 250px;
     height: 40px;
     border: none;
@@ -152,6 +155,7 @@ aside {
     height: 10%;
     width: 25%;
     margin-left: 38%;
+    margin-block-end: 10%;
 }
 
 #div-cliente h2 {
@@ -210,16 +214,40 @@ aside {
     font-size: 10pt;
 }
 
+#aside_botao {
+    width: 160px;
+    height: 45px;
+    border: none;
+    color: white;
+    background-color: black;
+    border: solid 2px black;
+    font-size: 15pt;
+    margin-top: 10px;
+}
+
+#aside_botao a {
+    text-decoration: none;
+}
+
+#aside_botao:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
 article{
     grid-area: article;
 }
 
 #carouselExampleIndicators{
     background-size: cover;
+    display:flex;
     align-items: center;
-    display: flex;
-    align-items: center;
+    justify-content: center;
+
 }
+
 
 section {
     grid-area: section;
@@ -266,7 +294,7 @@ section {
 }
 
 #sectionButon #pergunta_section {
-    color: black;
+    color: #535353;
     align-items: stretch;
     font-size: 35pt;
 }
