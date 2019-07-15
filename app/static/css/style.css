@@ -14,7 +14,7 @@ body {
                         'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 90vh 105vh 90vh 30vh;
+    grid-template-rows: 12vh 110vh 90vh 105vh 100vh 30vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -36,11 +36,13 @@ body {
 
 .navbar a:hover{
     border-bottom: 2px solid red;
+    text-decoration: none;
+    color: white;
 }
+#iconnav{
+    height: 90%;
+    margin-left: 50px;
 
-.navbar #iconnav{
-    height: 500%;
-    width: 25%;
 }
 
 header {
@@ -83,12 +85,12 @@ header {
 }
 
 #formdiv {
-    margin-block-end: -10%;
     width: 23%;
-    height: 80%;
+    height: 95%;
     background-color: rgba(0, 0, 0, 0.555);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-content: center;
     border-top: 10px solid #c50000e0;
     border-block-end: 10px solid#c50000e0;
@@ -111,17 +113,30 @@ header {
     font-size: 18px;  
 }
 
-#formdiv h1 {  
+#formdiv h2 {  
     color: white;   
-    margin-top:15%;
+    font-size:25pt;
+    margin: 0;
 
+}
+
+.pedido_formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.pedido_formdiv span{
+    color:#c50000e0;
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 120px;
+    top: 55px;
     right: 30px;
 }
 
@@ -175,7 +190,7 @@ aside {
 
 .estrutura {
     width: 100vw;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

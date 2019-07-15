@@ -18,9 +18,9 @@
 
 <body>
     <nav class="navbar">
-        <img id= "iconnav" src="../static/img/logo_pizza1.png" alt="iconpizza">
+        <img id= "iconnav" src="../static/img/favicon.png" alt="iconpizza">
         <a href="#">Home</a>
-        <a href="#comofunciona">Como Funciona</a>
+        <a href="#comofunciona">Cliente</a>
         <a href="#pizzarias">Pizzarias</a>
         <a href="#contato">Contato</a>
     </nav>
@@ -34,18 +34,20 @@
             </div>
             
             <div id="formdiv">
-                <h1>Pedido!</h1>
-                {% if msg %}
-                <p>{{ msg }} </p>
-                {% endif %}
-                
-                <form method='POST'>
-                    <div class="inputs">
-                        {% csrf_token %}
-                        {{ form }}
-                        <button>Monte Agora</button>
-                    </div>
-                </form>
+                <div class="pedido_formdiv">
+                    <h2>Pedido<span>!</span></h2>
+                </div>
+                    {% if msg %}
+                    <p>{{ msg }} </p>
+                    {% endif %}
+                    
+                    <form method='POST'>
+                        <div class="inputs">
+                            {% csrf_token %}
+                            {{ form }}
+                            <button> Monte Agora</button>
+                        </div>
+                    </form>
             </div>
         </div>
     </header> 
