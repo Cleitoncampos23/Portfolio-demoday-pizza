@@ -6,6 +6,7 @@
 body {
     margin: 0;
     display: grid;
+    
     grid-template-areas:'navbar navbar navbar navbar'
                         'header header header header'
                         'aside aside aside aside'
@@ -13,7 +14,7 @@ body {
                         'section section section section'
                         'footer footer footer footer';
 
-    grid-template-rows: 12vh 110vh 90vh 105vh 90vh 20vh;
+    grid-template-rows: 12vh 110vh 90vh 105vh 90vh 30vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -24,6 +25,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .navbar a {
@@ -43,6 +45,7 @@ body {
 
 header {
     grid-area: header;
+    
 }
 
 #bg_gif{
@@ -63,6 +66,7 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.438);
     background-repeat: no-repeat;
+    
 }
 
 #TextoHeader {
@@ -75,6 +79,7 @@ header {
     color: white;
     font-family: sans-serif;
     font-weight: bold;
+    
 }
 
 #formdiv {
@@ -88,6 +93,7 @@ header {
     border-top: 10px solid #c50000e0;
     border-block-end: 10px solid#c50000e0;
     position: relative; 
+    
 }
 
 #formdiv form {
@@ -97,6 +103,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 #formdiv form label {
@@ -149,6 +156,7 @@ aside {
     justify-content: space-between;
     align-content: center;
     border-top: 10px solid black;
+    overflow: hidden; /* server para tirar o estouro da barra de rolagem*/
 }
 
 #div-cliente {
@@ -320,40 +328,61 @@ section {
     color: white;
     cursor: pointer;
 }
-
-footer{
+ 
+/* aqui começa o footer */
+#footer{
     grid-area: footer;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 #iconeFooter {
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    color: white;
 }
 .redonda {
-    width: 40%;
-    height: 25%;
-    background: blue;
+    width: 9%;
+    height: 55%;
+    background: white; 
+    border-radius: 100%;
+    border: solid 1px white;
+}
+
+.redonda img {
+    width: 100%;
+    height: 100%;
+
 }
 
 #iconeFooter #icon {
-    width: 50%;
+    width: 55%;
     height: 30%;
-    background-color: gray;
+     /* background-color: gray;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-#iconeFooter #icon img {
+/* #iconeFooter #icon img {
     width: 10%;
     height: 10%;
-}
+} */
 
 #footerForm {
-    width: 30%;
-    height: 80%;
-    background-color: red;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -361,7 +390,9 @@ footer{
 }
 
 #footerForm form {
-    height: 80%;
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -369,20 +400,23 @@ footer{
 }
 
 #footerForm form input {
-    width: 170%;
-    height: 43%;
-    border: none;
+    width: 50%;
+    height: 45%;
     border: 2px solid white;
     background-color: black;
+    
 }
 
 #footerForm form input::placeholder {
     padding-left: 5%;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #footerForm form button {
-    width: 170%;
+    width: 50%;
     height: 43%;
     border: none;
+    background: white;
 }
+
+/* aqui termina o footer */
