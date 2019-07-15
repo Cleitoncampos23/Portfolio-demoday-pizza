@@ -21,25 +21,13 @@ def mostrar_index(request):
 
 
 def mostrar_pedidos(request):
-    form = MassaForm(request.POST or None)
+         form = MassaForm(request.POST or None)
 
-    return render(request, 'pedidos.html',  {'form': form})
+         if form.is_valid():
+             form.save()
+             form = MassaForm()
+    
+         return render(request, 'pedidos.html',  {'form': form})
 
 def mostrar_pedido1(request):
     return render(request, 'pedido1.html', {'form': form})
-
-# def mostrar_ingredientes(request):
-#     form = MassaForm(request.POST or None)
-#     return render(request, 'ingredientes.html', {'form': form})
-
-# def mostrar_ingredientes1(request):
-#     form = MassaForm(request.POST or None)
-#     return render(request, 'ingredientes1.html', {'form': form})
-
-# def mostrar_ingredientes2(request):
-#     form = MassaForm(request.POST or None)
-#     return render(request, 'ingredientes2.html', {'form': form})
-
-# def mostrar_ingredientes3(request):
-#     form = MassaForm(request.POST or None)
-#     return render(request, 'ingredientes3.html', {'form': form})
