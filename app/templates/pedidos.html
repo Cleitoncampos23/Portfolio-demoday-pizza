@@ -15,7 +15,7 @@
     <nav class="navbar">
         <img id= "iconnav" src="../static/img/logo_pizza1.png" alt="iconpizza">
         <a href="#">Home</a>
-        <a href="#comofunciona">Como Funciona</a>
+        <a href="#comofunciona">Cliente</a>
         <a href="#pizzarias">Pizzarias</a>
         <a href="#contato">Contato</a>
    </nav>
@@ -25,11 +25,13 @@
 <div>
    
      <!-- <img src="../static/img/pizza (2).jpg" alt=""> -->
-   
+  
+
 
  <form method="POST">
     {% csrf_token %}
     {{ form }}
     <a href=><button>Monte Agora</button></a>
  </form>
+
 </div>
