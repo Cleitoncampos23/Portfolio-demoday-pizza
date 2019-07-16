@@ -80,7 +80,7 @@ header {
 }
 
 #TextoHeader h1{
-    font-size: 65pt;
+    font-size: 55pt;
     color: white;
     font-family: 'Cantata One', serif;
 
@@ -91,7 +91,7 @@ header {
     opacity: 1;
     margin-left: 5px;
     display: inline-block;
-    animation: blink .9s infinite;
+    animation: blink .13s infinite;
   }
 
   @keyframes blink {
