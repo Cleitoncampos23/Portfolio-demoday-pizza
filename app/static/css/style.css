@@ -77,12 +77,31 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    
 }
+
+#TextoHeader h1{
+    font-size: 65pt;
+    color: white;
+    font-family: 'Cantata One', serif;
+
+}
+
+  #TextoHeader h1::after {
+    content: none;
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .9s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 #formdiv {
     width: 23%;
