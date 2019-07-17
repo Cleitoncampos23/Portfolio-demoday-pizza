@@ -13,7 +13,7 @@ body {
 
     grid-template-rows: 8vh 50vh 50vh 20vh;
 
-
+}
 
 .navbar {
     grid-area: navbar;
@@ -21,8 +21,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .navbar a {
