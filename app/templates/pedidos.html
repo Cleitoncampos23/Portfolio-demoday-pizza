@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/pedidos.css' %} ">
+<<<<<<< HEAD
     
     <title>Pizza</title>
+=======
+
+    <title>Smart Pizza</title>
+>>>>>>> ca9a6eb3a171f2a1170ce4054b2da7a379e15b2e
 </head>
 
 <body>
@@ -19,6 +25,7 @@
         <a href="#comofunciona">Como Funciona</a>
         <a href="#pizzarias">Pizzarias</a>
         <a href="#contato">Contato</a>
+<<<<<<< HEAD
     </nav>
     
     <header>
@@ -69,3 +76,26 @@
         </footer>
 </body>
 </html>
+=======
+   </nav>
+
+<header>
+    <div class="h1_escolha">
+        <h1>ESCOLHA O TIPO DE PIZZA</h1>
+    </div>
+</header>
+
+<section>
+    <div class=ingredientes>
+
+        <!-- <img src="../static/img/pizza (2).jpg" alt=""> -->
+    
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <a href=><button>Monte Agora</button></a>
+        </form>
+
+    </div>
+</section>
+>>>>>>> ca9a6eb3a171f2a1170ce4054b2da7a379e15b2e

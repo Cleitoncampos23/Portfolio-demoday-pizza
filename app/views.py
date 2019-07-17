@@ -26,8 +26,8 @@ def mostrar_pedidos(request):
                 
     if form.is_valid():
         form.save()
+        form = MassaForm()
 
-    
     return render(request, 'pedidos.html',  {'form': form})
 
 def mostrar_pedido1(request):
