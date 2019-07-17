@@ -312,7 +312,7 @@ section {
 #div-pizzarias h2 {
     text-align: center;
     color: white;
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 .section_fundo {
@@ -386,7 +386,7 @@ section {
     color: white;
 }
 .redonda {
-    width: 9%;
+    width: 10%;
     height: 55%;
     background: white; 
     border-radius: 100%;
@@ -401,11 +401,12 @@ section {
 
 #iconeFooter #icon {
     width: 55%;
-    height: 30%;
+    height: 35%;
      /* background-color: gray;  */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
     
 }
 
@@ -452,6 +453,7 @@ section {
     height: 43%;
     border: none;
     background: white;
+   
 }
 
 /* aqui termina o footer */
