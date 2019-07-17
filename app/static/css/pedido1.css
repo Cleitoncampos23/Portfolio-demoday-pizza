@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-areas:'navbar navbar navbar navbar';
 
-    grid-template-rows: 12vh;
+    grid-template-rows: 8vh;
     grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .navbar a {
@@ -29,9 +30,11 @@ body {
 
 .navbar a:hover{
     border-bottom: 2px solid red;
+    text-decoration: none;
+    color: white;
 }
+#iconnav{
+    height: 90%;
+    margin-left: 60px;
 
-.navbar #iconnav{
-    height: 500%;
-    width: 25%;
 }
