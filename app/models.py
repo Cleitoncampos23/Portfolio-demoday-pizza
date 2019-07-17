@@ -101,8 +101,14 @@ class Massa(models.Model):
     ('cb', 'chocolate branco'),
     ('mg', 'morango'),
     ('dl', 'doce de leite'),
-    ('br', 'brigaderio'),
-
+    ('br', 'brigadeiro'),
+    ('pt', 'prestigio'),
+    ('ln', 'leite ninho'),
+    ('so', 'sorvete'),
+    ('ab', 'abacaxi'),
+    ('rj', 'romeu e julieta'),
+    ('om', 'ovomaltine'),
+    ('pc', 'paçoca'),
     ]
 
     massa = models.CharField(max_length=60, choices=massa_opcoes, default="")
