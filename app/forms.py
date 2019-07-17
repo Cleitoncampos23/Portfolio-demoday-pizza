@@ -1,6 +1,6 @@
 from django import forms
 from app.models import FormCliente
-from app.models import Massa, Ingrediente
+from app.models import Massa
 
 class FormClienteForm(forms.ModelForm):
     class Meta:
@@ -16,17 +16,15 @@ class FormClienteForm(forms.ModelForm):
 
 
 class MassaForm(forms.ModelForm):
-
-    def __init__(self, tipo, *args,**kwargs):
-        self.tipo = tipo
-        super(MassaForm,self).__init__(*args,**kwargs)
-        self.fields['ingredientes'] = forms.ModelMultipleChoiceField(queryset=Ingrediente.objects.filter(tipo=tipo))
-
     class Meta:
         model = Massa
         fields = [
             'massa',
-            'molho'
+            'molho',
+            'ingredientes_veg',
+            'ingredientes_integral',
+            'ingredientes_opcoes',
+            'ingredientes_doce',
         ]
 
 # class MassaForm(forms.ModelForm):

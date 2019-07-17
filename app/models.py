@@ -10,22 +10,6 @@ class FormCliente(models.Model):
     cidade = models.CharField(max_length=100)
     pizzarias = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.nome
-
-
-class Ingrediente(models.Model):
-    tipos = [
-        ('doce', 'doce'),
-        ('vege', 'vegetariano'),
-        ('salg', 'salgado')
-    ]
-
-    nome = models.CharField(max_length=60)
-    tipo = models.CharField(max_length=4, choices=tipos)
-
-    def __str__(self):
-        return self.nome
 
 class Massa(models.Model):
     massa_opcoes = [
@@ -46,13 +30,6 @@ class Massa(models.Model):
     ('sj', 'soja'),
 
     ]
-
-    massa = models.CharField(max_length=60, choices=massa_opcoes, default="")
-    molho = models.CharField(max_length=60, choices=molho_opcoes, default="")
-    ingredientes = models.ManyToManyField(Ingrediente)
-
-    def __str__(self):
-        return self.massa
 
     ingredientes_veg = [
     ('tf', 'tofu'),
@@ -121,11 +98,19 @@ class Massa(models.Model):
     ('cb', 'chocolate branco'),
     ('mg', 'morango'),
     ('dl', 'doce de leite'),
-    ('br', 'brigaderio'),
-
+    ('br', 'brigadeiro'),
+    ('pt', 'prestigio'),
+    ('ln', 'leite ninho'),
+    ('so', 'sorvete'),
+    ('ab', 'abacaxi'),
+    ('rj', 'romeu e julieta'),
+    ('om', 'ovomaltine'),
+    ('pc', 'paçoca'),
     ]
 
-
-
-
-
+    massa = models.CharField(max_length=60, choices=massa_opcoes, default="")
+    molho = models.CharField(max_length=60, choices=molho_opcoes, default="")
+    ingredientes_veg = models.CharField(max_length=60, default="")
+    ingredientes_integral = models.CharField(max_length=60, default="")
+    ingredientes_opcoes = models.CharField(max_length=60, default="")
+    ingredientes_doce = models.CharField(max_length=60, default="")
