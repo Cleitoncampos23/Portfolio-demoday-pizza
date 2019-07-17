@@ -31,9 +31,6 @@ class Massa(models.Model):
 
     ]
 
-    molho = models.CharField(max_length=60, choices=molho_opcoes, default="")
-
-
     ingredientes_veg = [
     ('tf', 'tofu'),
     ('mc', 'muçarela de castanha'),
@@ -112,7 +109,8 @@ class Massa(models.Model):
     ]
 
     massa = models.CharField(max_length=60, choices=massa_opcoes, default="")
-
-
-
-
+    molho = models.CharField(max_length=60, choices=molho_opcoes, default="")
+    ingredientes_veg = models.CharField(max_length=60, default="")
+    ingredientes_integral = models.CharField(max_length=60, default="")
+    ingredientes_opcoes = models.CharField(max_length=60, default="")
+    ingredientes_doce = models.CharField(max_length=60, default="")
