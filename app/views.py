@@ -23,10 +23,13 @@ def mostrar_index(request):
 
 def mostrar_pedidos(request):
     form = MassaForm(request.POST or None)
+    msg = ''
                 
     if form.is_valid():
         form.save()
         form = MassaForm()
+        msg = 'Pedido realizado com sucesso'
+        
 
     return render(request, 'pedidos.html',  {'form': form})
 
