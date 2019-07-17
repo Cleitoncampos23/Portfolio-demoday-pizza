@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/pedidos.css' %} ">
     
     <title>Pizza</title>
@@ -29,9 +28,29 @@
     </header>
     
     <section>
-        <div class=ingredientes>
+         <div class="fundoTransparente">
+             <div id="img_pizza">
+                <img src="../static/img/iconpizza.png" alt="">
+            </div>
+                        
+            <div id="formdiv">
+                     {% if msg %}
+                     <p>{{ msg }} </p>
+                     {% endif %}
+                                
+                     <form method='POST'>
+                         <div class="inputs">
+                             {% csrf_token %}
+                             {{ form }}
+                            <button>Monte Agora</button>
+                        </div>
+                     </form>
+                </div>
+         </div>
+        
+          <!-- <div class=ingredientes>
     
-            <!-- <img src="../static/img/pizza (2).jpg" alt=""> -->
+            <img src="../static/img/pizza (2).jpg" alt="">
         
             <form method="POST">
                 {% csrf_token %}
@@ -39,7 +58,7 @@
                 <a href=><button>Monte Agora</button></a>
             </form>
     
-        </div>
+          </div> -->
     </section>
 
 
