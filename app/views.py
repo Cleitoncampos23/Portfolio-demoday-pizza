@@ -21,13 +21,13 @@ def mostrar_index(request):
     return render(request, 'index.html', contexto)
 
 
-def mostrar_pedidos(request, tipo):
-    form = MassaForm(tipo, request.POST or None)
+def mostrar_pedidos(request):
+    form = MassaForm(request.POST or None)
                 
     if form.is_valid():
         form.save()
+        form = MassaForm()
 
-    
     return render(request, 'pedidos.html',  {'form': form})
 
 def mostrar_pedido1(request):
